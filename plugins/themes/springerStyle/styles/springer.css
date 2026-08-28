@@ -1,0 +1,468 @@
+/* ==========================================
+   SPRINGER NATURE LINK CORE STYLES
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #222222;
+    background-color: #fbfbfb;
+    line-height: 1.6;
+}
+
+.sp-container {
+    max-width: var(--sp-max-width, 1200px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--sp-pad-side, 24px);
+    padding-right: var(--sp-pad-side, 24px);
+}
+
+/* --- 1. HEADER (UNIFIED SPRINGER BRAND) --- */
+.sp-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.sp-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.sp-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #01324b;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.sp-brand__badge {
+    background: #007373;
+    color: #ffffff;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sp-nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.sp-nav-list li a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: color 0.15s;
+}
+
+.sp-nav-list li a:hover {
+    color: #025e8d;
+    text-decoration: underline;
+}
+
+.sp-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.sp-btn-link {
+    text-decoration: none;
+    color: #025e8d;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* --- 2. SPRINGER MASTHEAD (BANNER GELAP + COVER + INFO) --- */
+.sp-masthead {
+    background-color: #01324b;
+    color: #ffffff;
+    padding: 35px 0 25px 0;
+}
+
+.sp-masthead__breadcrumbs {
+    font-size: 0.84rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.sp-masthead__breadcrumbs a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sp-masthead__breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.sp-masthead__grid {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.sp-masthead__cover {
+    width: 140px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.sp-masthead__cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sp-masthead__cover-placeholder {
+    width: 140px;
+    height: 185px;
+    background: #025e8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.sp-masthead__info {
+    flex: 1;
+}
+
+.sp-masthead__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    line-height: 1.25;
+}
+
+.sp-masthead__model {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.sp-masthead__model span {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.sp-masthead__actions {
+    display: flex;
+    gap: 12px;
+}
+
+.sp-btn-submit {
+    background: #ffffff;
+    color: #01324b !important;
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 9px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+
+.sp-btn-submit:hover {
+    background: #f1f5f9;
+}
+
+/* --- 3. SUB-NAVIGATION BAR --- */
+.sp-subnav {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.sp-subnav__inner {
+    display: flex;
+    gap: 25px;
+    padding: 12px 0;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.sp-subnav__inner a {
+    color: #444444;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.sp-subnav__inner a:hover {
+    color: #025e8d;
+}
+
+/* --- 4. HOMEPAGE TWO-COLUMN BODY --- */
+.sp-main-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.sp-section-heading {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #025e8d;
+    color: #111111;
+}
+
+/* Overview Box */
+.sp-overview-box {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 24px 28px;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+/* Highlight / Latest Articles Cards */
+.sp-articles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sp-card-article {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 22px 24px;
+    transition: all 0.2s ease;
+}
+
+.sp-card-article:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-color: #cccccc;
+}
+
+.sp-card-article__tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #007373;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.sp-card-article__title {
+    font-size: 1.18rem;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.sp-card-article__title a {
+    color: #025e8d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.sp-card-article__title a:hover {
+    text-decoration: underline;
+}
+
+.sp-card-article__authors {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+.sp-card-article__meta {
+    font-size: 0.82rem;
+    color: #777777;
+    display: flex;
+    gap: 15px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+}
+
+/* --- 5. SIDEBAR METRICS WIDGET --- */
+.sp-sidebar-card {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 22px 20px;
+    margin-bottom: 25px;
+}
+
+.sp-sidebar-card__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    color: #111111;
+}
+
+.sp-metric-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sp-metric-item:last-child {
+    border-bottom: none;
+}
+
+.sp-metric-icon {
+    font-size: 20px;
+}
+
+.sp-metric-label {
+    font-size: 0.85rem;
+    color: #666666;
+    display: block;
+}
+
+.sp-metric-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+/* --- 6. FOOTER SPRINGER --- */
+.sp-footer {
+    background: #111111;
+    color: #cccccc;
+    padding: 50px 0 20px 0;
+    margin-top: 60px;
+}
+
+.sp-footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #222222;
+}
+
+.sp-footer__col h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0 0 14px 0;
+}
+
+.sp-footer__col p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #999999;
+}
+
+.sp-footer__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sp-footer__links li {
+    margin-bottom: 8px;
+}
+
+.sp-footer__links li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.88rem;
+}
+
+.sp-footer__links li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.sp-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.82rem;
+    color: #777777;
+}
+
+/* --- 7. DETAIL PAGES BOX LAYOUT --- */
+.pkp_structure_page {
+    width: 100% !important;
+    background-color: #fbfbfb !important;
+    min-height: 60vh;
+}
+
+.pkp_structure_content {
+    max-width: var(--sp-max-width, 1200px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: var(--sp-pad-vert, 40px) var(--sp-pad-side, 24px) !important;
+    box-sizing: border-box !important;
+}
+
+.pkp_structure_main {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.cmp_breadcrumbs {
+    margin-bottom: 25px !important;
+    font-size: 0.88rem !important;
+}
+
+.cmp_breadcrumbs ol {
+    list-style: none !important;
+    display: flex !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.cmp_breadcrumbs ol li a {
+    color: #025e8d !important;
+    text-decoration: none !important;
+}
+
+.page_title, h1.page_title {
+    font-size: 2.1rem !important;
+    font-weight: 700 !important;
+    color: #111111 !important;
+    margin: 0 0 25px 0 !important;
+}
+
+.cmp_notification, .pkp_notification {
+    background: #ffffff !important;
+    border: 1px solid #e0e0e0 !important;
+    border-left: 4px solid #025e8d !important;
+    border-radius: 4px !important;
+    padding: 20px 24px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03) !important;
+}
+
+@media (max-width: 900px) {
+    .sp-masthead__grid { flex-direction: column; align-items: center; text-align: center; }
+    .sp-main-layout { grid-template-columns: 1fr; }
+    .sp-footer__grid { grid-template-columns: 1fr; }
+}
